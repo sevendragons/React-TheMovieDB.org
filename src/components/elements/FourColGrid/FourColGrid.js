@@ -26,8 +26,9 @@ const FourColGrid = (props) => {
   )
 }
 
-// FourColGrid.propTypes = {
-//   : PropTypes.
-// };
+FourColGrid.propTypes = {
+  header: PropTypes.string,
+  loading: PropTypes.bool
+};
 
 export default FourColGrid;
