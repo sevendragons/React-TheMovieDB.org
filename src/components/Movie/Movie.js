@@ -8,13 +8,15 @@ import FourColGrid from '../elements/FourColGrid/FourColGrid';
 import Spinner from '../elements/Spinner/Spinner';
 import './Movie.css'
 
+import PFiveJS from '../P5/PFiveJS';
+import PFiveJS2 from '../P5/PFiveJS_2';
 
 class Movie extends Component {
   state = {
     movie: null,
     actors: null,
     directors: [],
-    loading: false
+    loading: false,
   }
 
   componentDidMount(){
@@ -98,33 +100,43 @@ class Movie extends Component {
 
   render() {
     const {movie, actors, directors, loading} = this.state
+    // let display = <PFiveJS/>;
+    // let display = <PFiveJS2/>;
+
+
+
     return (
       <div className="rmdb-movie">
-        { movie ?
+        { movie  ?
           <div>
             <Navigation movie={this.props.location.movieName}></Navigation>
             <MovieInfo movie={movie} directors={directors}></MovieInfo>
             <MovieInfoBar time={movie.runtime} budget={movie.budget} revenue={movie.revenue}></MovieInfoBar>
           </div>
-          :  null }
-          {actors ?
-            <div className="rmdb-movie-grid">
-                <FourColGrid header={'Actors'}>
-                  {actors.map((element, i) => {
-                    return <Actor key={i} actor={element}></Actor>
-                  }) }
-                </FourColGrid>
-              </div>
-            : null
-          }
+          : <PFiveJS/> }
+        { actors ?
+          <div className="rmdb-movie-grid">
+              <FourColGrid header={'Actors'}>
+                {actors.map((element, i) => {
+                  return <Actor key={i} actor={element}></Actor>
+                }) }
+              </FourColGrid>
+            </div>
+          : null
+        }
 
-          {!actors && !this.state.loading ? <h1>No Movie Found!</h1> :null}
-          {this.state.loading ? <Spinner></Spinner> :null}
+
+
       </div>
+
     );
   }
 
 }
-// <FourColGrid ></FourColGrid>
 
 export default Movie;
+
+
+
+// { !this.state.loading ? <h1 style={{textAlign: 'center'}}>Uuh oh, 😥  Not Found this page - Check your link please - from movie component!</h1> :null}
+// {this.state.loading ? <Spinner></Spinner> :null}

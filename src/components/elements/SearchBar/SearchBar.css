@@ -3,7 +3,7 @@
   height: 105px;
   background: #1c1c1c;
   position: relative;
-  padding: 25px 20px 0px 20px;
+  padding: 25px 20px 140px 20px;
   box-sizing: border-box;
   color: #fff;
 }
@@ -42,7 +42,13 @@
 .rmdb-searchbar-input:focus {
   outline: none;
 }
+.link{
+  color: white;
+  text-decoration: none;
+  font-family: 'Abel', sans-serif;
+  font-size: 17pt;
 
+}
 @media screen and (max-width: 720px) {
   .rmdb-searchbar-input {
     font-size: 28px;

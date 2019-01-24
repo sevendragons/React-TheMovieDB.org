@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import FontAwesome from 'react-fontawesome'
 
 import {IMAGE_BASE_URL, POSTER_SIZE, BACKDROP_SIZE} from '../../../config';
