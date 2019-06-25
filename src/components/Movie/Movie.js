@@ -9,7 +9,8 @@ import Spinner from '../elements/Spinner/Spinner';
 import './Movie.css'
 
 import PFiveJS from '../P5/PFiveJS';
-import PFiveJS2 from '../P5/PFiveJS_2';
+import Hook from '../P5/Hook';
+import NotFound from '../elements/NotFound/NotFound';
 
 class Movie extends Component {
   state = {
@@ -101,19 +102,21 @@ class Movie extends Component {
   render() {
     const {movie, actors, directors, loading} = this.state
     // let display = <PFiveJS/>;
-    // let display = <PFiveJS2/>;
+    // let display = <Hook/>;
 
 
 
     return (
       <div className="rmdb-movie">
+        <PFiveJS/>
+        <Hook initialCount={0}/>
         { movie  ?
           <div>
             <Navigation movie={this.props.location.movieName}></Navigation>
             <MovieInfo movie={movie} directors={directors}></MovieInfo>
             <MovieInfoBar time={movie.runtime} budget={movie.budget} revenue={movie.revenue}></MovieInfoBar>
           </div>
-          : <PFiveJS/> }
+          : <NotFound/> }
         { actors ?
           <div className="rmdb-movie-grid">
               <FourColGrid header={'Actors'}>

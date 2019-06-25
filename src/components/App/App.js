@@ -5,7 +5,7 @@ import Header from '../elements/Header/Header';
 import Home from '../Home/Home';
 import Movie from '../Movie/Movie';
 import PFiveJS from '../P5/PFiveJS';
-import PFiveJS2 from '../P5/PFiveJS_2';
+import Hook from '../P5/Hook';
 import NotFound from '../elements/NotFound/NotFound';
 
 
@@ -19,7 +19,7 @@ const App = () => {
           <Route path="/:movieId" exact component={Movie}></Route>
           
           <Route activeClassName="active" path="/PFiveJS" exact render={(props) => <PFiveJS/>}></Route>
-          <Route activeClassName="active" path="/PFiveJS2" exact render={(props) => <PFiveJS2/>}></Route>
+          <Route activeClassName="active" path="/Hook" exact render={(props) => <Hook/>}></Route>
           <Route path="*" exact component={NotFound}></Route>
 
         </Switch>

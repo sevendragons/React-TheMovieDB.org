@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "p5": "^0.7.3",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
+    "p5": "^0.8.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-fontawesome": "^1.6.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.5"
