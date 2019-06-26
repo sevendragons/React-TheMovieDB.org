@@ -18,6 +18,17 @@
   position: relative;
   color: #fff;
 }
+.rmdb-searchbar-menu {
+  max-width: 1280px;
+  width: 65px;
+  height: 55px;
+  background:#353535;
+  margin: 0 8px;
+  border-radius: 40px;
+  position: relative;
+  color: #fff;
+  padding: 16px 24px;
+}
 
 .rmdb-fa-search {
   position: absolute;

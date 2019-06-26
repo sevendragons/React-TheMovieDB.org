@@ -6,7 +6,7 @@ import './MovieInfoBar.css'
 
 
 
-const MovieInfoBar = (time, budget, revenue) => (
+const MovieInfoBar = ({time, budget, revenue}) => (
     <div className="rmdb-movieinfobar">
       <div className="rmdb-movieinfobar-content">
         <div className="rmdb-movieinfobar-content-col">

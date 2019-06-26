@@ -119,6 +119,8 @@ class Home extends PureComponent {
               image={`${IMAGE_BASE_URL}${BACKDROP_SIZE}${heroImage.backdrop_path}`}
               title={heroImage.original_title}
               text={heroImage.overview}
+              movieId={heroImage.id}
+              movieName={heroImage.original_title}
               ></HeroImage>
 
             <SearchBar

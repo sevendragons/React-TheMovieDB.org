@@ -19,7 +19,7 @@ const App = () => {
           <Route path="/:movieId" exact component={Movie}></Route>
           
           <Route activeClassName="active" path="/PFiveJS" exact render={(props) => <PFiveJS/>}></Route>
-          <Route activeClassName="active" path="/Hook" exact render={(props) => <Hook/>}></Route>
+          <Route activeClassName="active" path="/Hook " exact render={(props) => <Hook/>}></Route>
           <Route path="*" exact component={NotFound}></Route>
 
         </Switch>

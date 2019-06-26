@@ -33,9 +33,13 @@ class SearchBar extends Component {
             value={this.state.value}/>
         </div>
 
-        <div className="rmdb-navigation" style={{borderRadius: '25px', marginTop: '12px'}}>
-          <div className="rmdb-navigation-content">
-            <Link style={{textDecoration: 'none'}} to="/PFiveJS"><a className="link">P5.js</a></Link>
+        <div className="row d-flex justify-content-center mt-3">
+          <div>
+            <Link className="rmdb-searchbar-menu" style={{textDecoration: 'none'}} to="/PFiveJS"><a className="link">P5.js</a></Link>
+          </div>
+
+          <div>
+            <Link className="rmdb-searchbar-menu" style={{textDecoration: 'none'}} to="/Hook"><a className="link">Hook</a></Link>
           </div>
         </div>
 

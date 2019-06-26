@@ -108,8 +108,6 @@ class Movie extends Component {
 
     return (
       <div className="rmdb-movie">
-        <PFiveJS/>
-        <Hook initialCount={0}/>
         { movie  ?
           <div>
             <Navigation movie={this.props.location.movieName}></Navigation>
